@@ -1,146 +1,199 @@
-[# 🐝 BeeFlow: ADHD Task Manager
+# 🐝 BeeFlow: Task Management for ADHD
 
-<div align="center">
 
-  <h3><i>stay in motion through the commotion</i></h3>
+  ![Image](https://github.com/user-attachments/assets/965d8b72-4db8-4e08-8bb9-a0e6182100c8)
+  
+  <h3><i>Stay in motion through the commotion</i></h3>
   
   [![Flutter](https://img.shields.io/badge/Flutter-3.19.0-blue.svg)](https://flutter.dev)
   [![Dart](https://img.shields.io/badge/Dart-3.3.0-blue.svg)](https://dart.dev)
+  [![Firebase](https://img.shields.io/badge/Firebase-Latest-orange.svg)](https://firebase.google.com)
   [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-</div>
 
-## 🌟 Transform Your Productivity Journey
 
-BeeFlow is an innovative task management application specifically designed for individuals with ADHD. With its intuitive interface, gamification features, and AI-powered task breakdowns, BeeFlow helps users stay focused and accomplish their goals.
+## Table of Contents
 
-## ✨ Key Features
+- [Overview](#overview)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-### 🎯 Smart Task Management
+## Overview
 
-- **Create & Organize**: Easily add tasks with titles, difficulty levels, and priorities
-- **Subtask Breakdown**: Break down complex tasks into manageable steps
-- **AI-Powered Analysis**: Get intelligent task breakdowns and difficulty assessments
-- **Focus Mode**: Dedicated screen for concentrating on one task at a time
+BeeFlow is a productivity application specifically designed for individuals with ADHD. It combines intuitive task management, gamification, and AI-powered features to help users overcome executive dysfunction and achieve their goals.
 
-### 🏆 Gamification System
+**Key Problems Solved:**
 
-- **XP Rewards**: Earn experience points for completing tasks and subtasks
-- **Level Progression**: Advance through levels with unique titles (Novice → Immortal)
-- **Streak System**: Maintain daily streaks for bonus rewards
-- **Achievements**: Unlock badges for reaching milestones
+- Task initiation difficulty
+- Sustaining attention and focus
+- Breaking down complex tasks
+- Maintaining motivation
+- Tracking progress effectively
 
-### 📊 Progress Tracking
+## Features
 
-- **Visual Stats**: Track your productivity with beautiful charts and indicators
-- **Daily Insights**: See your daily XP earnings and completion rates
-- **Achievement Gallery**: View all your unlocked achievements
-- **Recent Activity**: Review your recently completed tasks
+### Task Management
 
-### 🐝 Friendly Interface
+- **Intuitive Task Creation**: Simple UI for quick task entry
+- **AI-Powered Breakdown**: Automatically divides complex tasks into manageable steps
+- **Priority Setting**: Highlight urgent tasks with visual indicators
+- **Voice Input**: Hands-free task creation with speech-to-text capability
 
-- **Bee-themed design**: Engaging yellow and purple color scheme with bee mascot
-- **Intuitive navigation**: Simple bottom navigation bar with three main sections
-- **Draggable bookmark**: Quick access to home from any screen
+### Focus Mode
 
-### 🧠 AI-Powered Task Breakdown
+- **Pomodoro Timer**: Built-in 25/5 minute work/break cycle
+- **Distraction-Free Interface**: Clean design to maintain attention
+- **Background Sounds**: White noise, nature sounds, and more to enhance focus
+- **Subtask Tracking**: Complete steps in sequence for consistent progress
 
-- **Task analysis**: Automatically breaks down tasks into manageable subtasks
-- **Difficulty assessment**: AI evaluates and assigns appropriate difficulty levels
-- **XP calculation**: Customized experience points based on task complexity
+### Gamification System
 
-### 🎤 Voice Input
+- **XP Rewards**: Experience points for completed tasks based on difficulty
+- **Level Progression**: Advance through 10 levels with unique titles
+- **Achievement Badges**: Unlock 10+ achievements for reaching milestones
+- **Streak System**: Daily streaks with multipliers for consistent usage
 
-- **Speech-to-text**: Create tasks using voice commands
-- **Real-time transcription**: See your spoken words converted to text instantly
-- **Hands-free operation**: Perfect for when typing is inconvenient
+### Progress Tracking
 
-### ⏱️ Focus Mode
+- **Visual Statistics**: Track productivity metrics with intuitive visualizations
+- **Achievement Gallery**: Display unlocked badges and accomplishments
+- **Recent Activity**: Review recently completed tasks and earned XP
+- **Streak Counter**: Monitor and maintain daily usage streaks
 
-- **Pomodoro timer**: Built-in 25/5 minute work/break cycle
-- **Subtask tracking**: Check off subtasks as you complete them
-- **Distraction-free interface**: Clean design to maintain focus
+## Screenshots
 
-### 🏆 Progress Tracking
 
-- **XP system**: Earn experience points for completing tasks
-- **Level progression**: Watch your productivity level increase over time
-- **Achievement badges**: Unlock achievements for consistent performance
+  ![Image](https://github.com/user-attachments/assets/ce5d4cfd-a66f-4d1d-821d-a4f1ce0652fb)
+  ![Image](https://github.com/user-attachments/assets/02d8af3e-6100-4aa3-be2a-5d35dbcce9ec)
+  ![Image](https://github.com/user-attachments/assets/731f20bb-309d-48f7-9af7-7a06b56f2663)
+  ![Image](https://github.com/user-attachments/assets/580be326-144a-495d-b5c6-2aeda2915406)
 
-## 🚀 Getting Started
+## Architecture
+
+BeeFlow is built with a clean architecture approach, separating UI, business logic, and data layers:
+
+### Technology Stack
+
+- **Frontend**: Flutter (3.19.0+)
+- **State Management**: Provider pattern
+- **Backend**: Firebase (Authentication, Realtime Database)
+- **AI Integration**: Google Gemini API
+- **Local Storage**: Shared Preferences
+- **Authentication**: Firebase Auth
+
+### Code Structure
+
+```
+lib/
+├── main.dart              # Application entry point
+├── config/                # Configuration files
+├── models/                # Data models
+├── providers/             # State management
+├── screens/               # UI screens
+├── services/              # Firebase and API services
+├── utils/                 # Helper utilities
+└── widgets/               # Reusable UI components
+```
+
+## Installation
 
 ### Prerequisites
 
 - Flutter SDK (3.19.0 or higher)
 - Dart SDK (3.3.0 or higher)
-- Gemini API key (for AI features)
+- Firebase account
+- Google Gemini API key
 
-### Installation
+### Setup Instructions
 
 1. **Clone the repository**
 
    ```bash
    git clone https://github.com/yourusername/beeflow.git
-   ```
-
-2. **Navigate to the project directory**
-
-   ```bash
    cd beeflow
    ```
 
-3. **Install dependencies**
+2. **Install dependencies**
 
    ```bash
    flutter pub get
    ```
 
-4. **Configure your Gemini API key**
+3. **Configure Firebase**
 
-   - Open `lib/config/gemini_config.dart`
-   - Replace `apiKey` with your Gemini API key
+   - Create a Firebase project
+   - Add Android/iOS apps to your Firebase project
+   - Download and add the google-services.json/GoogleService-Info.plist
+   - Follow Firebase setup instructions for each platform
 
-5. **Run the app**
+4. **Set up Gemini API**
+
+   - Obtain a Gemini API key from Google AI Studio
+   - Create a file at `lib/config/gemini_config.dart` with:
+     ```dart
+     class GeminiConfig {
+       static const String apiKey = 'YOUR_API_KEY';
+       static const String endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+     }
+     ```
+
+5. **Run the application**
    ```bash
    flutter run
    ```
 
-## 🧩 How It Works
+## Usage
 
-### Task Creation
+### Task Management
 
-1. Add a new task with a title and optional priority
-2. Choose to use AI breakdown for automatic subtask generation
-3. Set difficulty level (Easy, Medium, Hard, Epic)
-
-### Task Completion
-
-1. Complete subtasks one by one
-2. Earn XP based on task difficulty and completion speed
-3. Maintain streaks for bonus multipliers
-4. Unlock achievements as you progress
+1. Tap the "+" button to create a new task
+2. Enter a task title and optionally enable AI breakdown
+3. Mark tasks as complete by using the "Quick Complete" button or in Focus Mode
 
 ### Focus Mode
 
-1. Select a task to focus on
-2. Use the Pomodoro timer to maintain concentration
-3. Complete subtasks during focused work sessions
-4. Return to the task list with a sense of accomplishment
+1. Select a task to focus on from your task list
+2. Use the timer controls to start, pause, or reset the focus session
+3. Check off subtasks as you complete them
+4. Enjoy background sounds to enhance concentration
 
+### Progress Tracking
 
-## 🛠️ Built With
+1. Navigate to the Progress screen to view your achievements
+2. Track your XP, level, and streak
+3. View your unlocked achievements
+4. Monitor your recently completed tasks
 
-- [Flutter](https://flutter.dev/) - UI framework
-- [Provider](https://pub.dev/packages/provider) - State management
-- [Shared Preferences](https://pub.dev/packages/shared_preferences) - Local storage
-- [Gemini API](https://ai.google.dev/) - AI task breakdown
-- [Confetti](https://pub.dev/packages/confetti) - Celebration effects
+## Contributing
 
+We welcome contributions to BeeFlow! Please follow these steps:
 
-<div align="center">
-  <p>Made with ❤️ for productivity enthusiasts</p>
-</div>
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
+
+Please ensure your code follows the project's style and includes appropriate tests.
+
+## Acknowledgments
+
+- The Flutter and Dart teams for the amazing framework
+- Firebase for robust backend services
+- Google Gemini for AI capabilities
+- The ADHD community for inspiration and feedback
+- All contributors who have helped improve BeeFlow
+- Built on the [IDX platform](https://idx.dev)
 
 ---
 
-_BeeFlow: Stay in motion without the commotion_ ✨
-](https://github.com/RahulRR-10/BeeFlow)
+<div align="center">
+  <p>Made with ❤️ by BeeFlow Team</p>
+  <p>© 2024-2025 BeeFlow</p>
+</div>
