@@ -1,9 +1,7 @@
 # 🐝 BeeFlow: ADHD Task Manager
 
 <div align="center">
-  ![WhatsApp Image 2025-04-05 at 02 18 02_cb3a4f7d](https://github.com/user-attachments/assets/d4ea73eb-7ef9-422e-8cb2-c51885a21720)
 
-  
   <h3><i>stay in motion through the commotion</i></h3>
   
   [![Flutter](https://img.shields.io/badge/Flutter-3.19.0-blue.svg)](https://flutter.dev)
@@ -128,12 +126,6 @@ BeeFlow is an innovative task management application specifically designed for i
 3. Complete subtasks during focused work sessions
 4. Return to the task list with a sense of accomplishment
 
-### Focus Screen
-
-1. Select a task to focus on
-2. Use the Pomodoro timer to maintain concentration
-3. Complete subtasks during focused work sessions
-4. Return to the task list with a sense of accomplishment
 
 ## 🛠️ Built With
 
@@ -143,96 +135,10 @@ BeeFlow is an innovative task management application specifically designed for i
 - [Gemini API](https://ai.google.dev/) - AI task breakdown
 - [Confetti](https://pub.dev/packages/confetti) - Celebration effects
 
-## 📱 Screenshots
-
-<div align="center">
-  <img src="assets/screenshot_task_list.png" alt="Task List" width="200"/>
-  <img src="assets/screenshot_focus.png" alt="Focus Mode" width="200"/>
-  <img src="assets/screenshot_progress.png" alt="Progress Screen" width="200"/>
-</div>
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by gamification principles in productivity apps
-- Special thanks to the Flutter community for amazing packages
-- Icon credits: [Material Icons](https://fonts.google.com/icons)
-
----
 
 <div align="center">
   <p>Made with ❤️ for productivity enthusiasts</p>
 </div>
-
-## 📱 Screens
-
-### Login & Registration
-
-- Secure authentication with email/password or Google sign-in
-- User profile creation with customizable settings
-- Anonymous login option for quick access
-
-### Home Screen
-
-- Motivational quotes that change on hover
-- Quick access cards to main app sections
-- Animated bee mascot for friendly interaction
-- Logout button for secure session management
-
-### Task List Screen
-
-- Complete overview of all your tasks
-- Color-coded difficulty levels for quick recognition
-- XP indicators showing task value
-- "Add Task" button with AI breakdown option
-- Voice input capability for hands-free task creation
-- Task filtering and sorting options
-- Quick-complete functionality for simple tasks
-
-### Task Creation
-
-- Simple task title input with optional voice recognition
-- AI breakdown option to generate subtasks automatically
-- Priority setting for urgent tasks
-- Clean and straightforward interface
-
-### Focus Screen
-
-- Pomodoro timer with start, pause, and reset controls
-- Subtask list with completion checkboxes
-- Session counter for tracking productivity streaks
-- Completion celebration with confetti animation
-- Draggable bookmark for quick navigation
-
-### Progress Screen
-
-- XP and level visualization
-- Daily, weekly, and monthly progress charts
-- Achievement badges and unlocked rewards
-- Productivity insights and trends
-
-### Settings
-
-- Theme customization options
-- Notification preferences
-- Account management
-- Data backup and sync settings
-- Help and support resources
-
-## 📄 Privacy & Security
-
-BeeFlow takes user privacy seriously. All task data is stored securely in Firebase with strict access rules. Speech recognition is performed locally on the device when possible, minimizing data transmission.
-
-## 📄 Support
-
-For support, feature requests, or bug reports, please open an issue on the repository or contact the development team.
 
 ---
 
