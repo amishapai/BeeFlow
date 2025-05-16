@@ -1,4 +1,4 @@
-# 🐝 BeeFlow: ADHD Task Manager
+[# 🐝 BeeFlow: ADHD Task Manager
 
 <div align="center">
 
@@ -143,3 +143,4 @@ BeeFlow is an innovative task management application specifically designed for i
 ---
 
 _BeeFlow: Stay in motion without the commotion_ ✨
+](https://github.com/RahulRR-10/BeeFlow)
